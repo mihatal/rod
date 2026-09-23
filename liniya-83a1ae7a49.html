@@ -1,0 +1,669 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow, noarchive, nosnippet, noimageindex">
+<meta name="googlebot" content="noindex, nofollow">
+<meta name="yandex" content="noindex, nofollow">
+<meta name="referrer" content="no-referrer">
+<title>Линия — подготовка к консулу</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&family=Manrope:wght@400;500;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --paper:#FFF8F8; --card:#FFFCFB; --band:#F7EEE9; --inset:#EFE3DB; --hair:#E4D7CD;
+  --ink:#13241B; --text:#2C382F; --soft:#4C564D; --mute:#877C72;
+  --green:#4BA776; --green-d:#2E7150; --green-dd:#193F2E; --mint:#84C2A1; --green-l:#EFF6F1;
+  --forest:#102A1F; --forest-s:#16382A; --forest-e:#29503D; --cream:#F4EFE9;
+  --brass:#A6843E; --amber:#E8590C;
+  --e:cubic-bezier(.22,.68,.18,1);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0; background:var(--paper); color:var(--text);
+  font:17px/1.6 Manrope,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+  padding-bottom:env(safe-area-inset-bottom,0);
+  -webkit-font-smoothing:antialiased;
+}
+body::before{
+  content:""; position:fixed; inset:0; z-index:0; pointer-events:none; opacity:.035;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='3'/%3E%3C/filter%3E%3Crect width='120' height='120' filter='url(%23n)'/%3E%3C/svg%3E");
+}
+img{max-width:100%}
+[hidden]{display:none!important}
+.wrap{max-width:1000px;margin:0 auto;padding:0 24px;position:relative;z-index:1}
+.narrow{max-width:760px}
+
+/* типографика */
+h1,h2,h3{font-family:Cormorant,Georgia,serif;color:var(--ink);margin:0;letter-spacing:-.02em;font-weight:600;line-height:1.05}
+h2{font-size:clamp(30px,5vw,40px)}
+h3{font-size:22px;font-family:Manrope,sans-serif;font-weight:700;letter-spacing:0}
+.over{font-family:"JetBrains Mono",monospace;font-size:12px;font-weight:500;text-transform:uppercase;letter-spacing:.2em;color:var(--mute)}
+.it{font-style:italic}
+p{margin:.65em 0}
+a{color:var(--green-d)}
+.lead{font-size:19px;color:var(--soft)}
+.small{font-size:14.5px;color:var(--mute)}
+.mono{font-family:"JetBrains Mono",monospace;font-variant-numeric:tabular-nums}
+
+/* шапка */
+header.top{
+  position:sticky;top:0;z-index:40;background:rgba(255,248,248,.93);backdrop-filter:blur(10px);
+  border-bottom:1px solid var(--hair);
+}
+.top .wrap{display:flex;align-items:center;gap:20px;height:58px}
+.brand{font-family:Cormorant,serif;font-weight:600;font-size:20px;color:var(--ink);letter-spacing:.26em;text-transform:uppercase;white-space:nowrap}
+.top nav{display:flex;gap:4px;margin-left:auto;overflow-x:auto;scrollbar-width:none}
+.top nav::-webkit-scrollbar{display:none}
+.top nav a{
+  font-family:"JetBrains Mono",monospace;font-size:11.5px;text-transform:uppercase;letter-spacing:.14em;
+  color:var(--soft);text-decoration:none;padding:7px 11px;border-radius:999px;white-space:nowrap;transition:.24s var(--e)
+}
+.top nav a:hover{background:var(--green-l);color:var(--green-d)}
+.top nav a.on{background:var(--ink);color:var(--cream)}
+
+/* герой */
+.hero{background:radial-gradient(120% 120% at 20% 0%,var(--forest-s) 0%,var(--forest) 55%,#0B2017 100%);color:var(--cream);padding:76px 0 68px;position:relative;overflow:hidden}
+.hero::after{content:"Талисман";position:absolute;right:-2%;bottom:-6%;font-family:Cormorant,serif;font-style:italic;font-size:clamp(120px,22vw,260px);color:rgba(244,239,233,.05);pointer-events:none;line-height:1}
+.hero .over{color:var(--mint)}
+.hero h1{font-size:clamp(46px,9vw,92px);color:var(--cream);font-weight:500;margin:14px 0 0}
+.hero h1 em{font-style:italic;color:var(--mint)}
+.hero .sub{max-width:540px;color:rgba(244,239,233,.76);font-size:18px;margin-top:18px}
+.count{display:flex;gap:28px;margin-top:38px;flex-wrap:wrap}
+.count div b{display:block;font-family:Cormorant,serif;font-size:46px;font-weight:500;color:var(--cream);line-height:1}
+.count div span{font-family:"JetBrains Mono",monospace;font-size:11px;text-transform:uppercase;letter-spacing:.18em;color:var(--mint)}
+.rule{height:1px;background:linear-gradient(90deg,var(--mint),transparent);margin:34px 0 0;transform-origin:left;animation:draw .9s var(--e) both .3s}
+@keyframes draw{from{transform:scaleX(0)}to{transform:scaleX(1)}}
+
+/* секции */
+section{padding:76px 0;border-bottom:1px solid var(--hair)}
+section:last-of-type{border-bottom:none}
+.shead{margin-bottom:34px}
+.shead h2{margin-top:8px}
+.shead p{max-width:620px;color:var(--soft);margin-top:10px}
+
+/* карточки */
+.card{background:var(--card);border:1px solid var(--hair);border-radius:16px;padding:22px 24px}
+.grid{display:grid;gap:16px}
+@media(min-width:720px){.g2{grid-template-columns:1fr 1fr}.g3{grid-template-columns:repeat(3,1fr)}}
+
+/* древо */
+.tree{position:relative;padding-left:4px}
+.tnode{position:relative;padding:0 0 30px 46px}
+.tnode::before{content:"";position:absolute;left:11px;top:26px;bottom:-4px;width:1px;background:var(--hair)}
+.tnode:last-child::before{display:none}
+.tnode .dot{position:absolute;left:5px;top:9px;width:13px;height:13px;border-radius:50%;background:var(--paper);border:2px solid var(--green);transition:.4s var(--e)}
+.tnode.key .dot{border-color:var(--brass);background:var(--brass);box-shadow:0 0 0 0 rgba(166,132,62,.5);animation:pulse 2.6s infinite}
+@keyframes pulse{0%{box-shadow:0 0 0 0 rgba(166,132,62,.45)}70%{box-shadow:0 0 0 14px rgba(166,132,62,0)}100%{box-shadow:0 0 0 0 rgba(166,132,62,0)}}
+.tnode .rel{font-family:"JetBrains Mono",monospace;font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--mute)}
+.tnode .nm{font-family:Cormorant,serif;font-size:clamp(25px,4.4vw,34px);font-weight:600;color:var(--ink);line-height:1.1;margin:3px 0 6px}
+.tnode.key .nm{color:var(--green-dd)}
+.tnode .meta{font-size:15px;color:var(--soft)}
+.tag{display:inline-block;font-family:"JetBrains Mono",monospace;font-size:10.5px;letter-spacing:.12em;text-transform:uppercase;padding:3px 9px;border-radius:999px;background:var(--green-l);color:var(--green-d);margin-right:6px;margin-top:8px}
+.tag.brass{background:#F6EEDC;color:#7B5F25}
+.branch{margin:6px 0 0 46px;padding:20px 22px;background:var(--band);border-radius:14px;border-left:2px solid var(--hair)}
+.branch .bn{font-family:Cormorant,serif;font-size:21px;font-weight:600;color:var(--ink)}
+
+/* маркеры */
+ul.m{list-style:none;padding:0;margin:10px 0}
+ul.m li{position:relative;padding-left:30px;margin:8px 0}
+ul.m li::before{content:"++";position:absolute;left:0;font-family:"JetBrains Mono",monospace;font-size:13px;color:var(--green-d)}
+ul.m.no li::before{content:"−−";color:#C92A2A}
+ul.m.step li::before{content:"→";color:var(--green-d)}
+ul.m.tech li::before{content:">>";color:var(--mute)}
+
+/* люди */
+.person{background:var(--card);border:1px solid var(--hair);border-radius:16px;overflow:hidden;transition:.3s var(--e)}
+.person:hover{border-color:var(--mint)}
+.person > button{width:100%;text-align:left;background:none;border:0;padding:20px 22px;cursor:pointer;font:inherit;display:flex;align-items:baseline;gap:12px}
+.person .pn{font-family:Cormorant,serif;font-size:24px;font-weight:600;color:var(--ink);line-height:1.15}
+.person .pr{font-family:"JetBrains Mono",monospace;font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--mute);margin-left:auto;white-space:nowrap}
+.person .body{padding:0 22px 20px;display:none}
+.person.open .body{display:block;animation:rise .42s var(--e) both}
+@keyframes rise{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+.kv{display:grid;grid-template-columns:auto 1fr;gap:6px 16px;font-size:15.5px;border-top:1px solid var(--hair);padding-top:14px}
+.kv dt{font-family:"JetBrains Mono",monospace;font-size:11px;text-transform:uppercase;letter-spacing:.1em;color:var(--mute);padding-top:4px}
+.kv dd{margin:0;color:var(--text)}
+
+/* таймлайн */
+.tl{position:relative;padding-left:30px}
+.tl::before{content:"";position:absolute;left:5px;top:6px;bottom:6px;width:1px;background:var(--hair)}
+.tl .ev{position:relative;padding:0 0 26px}
+.tl .ev::before{content:"";position:absolute;left:-29px;top:8px;width:9px;height:9px;border-radius:50%;background:var(--green)}
+.tl .ev.br::before{background:var(--brass)}
+.tl .yr{font-family:"JetBrains Mono",monospace;font-size:13px;color:var(--green-d);letter-spacing:.06em}
+.tl .tx{font-size:16.5px;color:var(--text);margin-top:2px}
+
+/* Q&A */
+.qa{border-top:1px solid var(--hair)}
+.qa:last-child{border-bottom:1px solid var(--hair)}
+.qa button{width:100%;background:none;border:0;padding:18px 40px 18px 0;text-align:left;cursor:pointer;font:inherit;position:relative;color:var(--ink);font-weight:700;font-size:17px}
+.qa button::after{content:"+";position:absolute;right:6px;top:50%;transform:translateY(-50%);font-family:"JetBrains Mono",monospace;color:var(--green);font-size:20px;transition:.3s var(--e)}
+.qa.open button::after{transform:translateY(-50%) rotate(45deg)}
+.qa .ans{display:none;padding:0 0 20px;color:var(--soft);font-size:16.5px}
+.qa.open .ans{display:block;animation:rise .4s var(--e) both}
+
+/* тренажёр */
+.trainer{background:var(--forest);border-radius:20px;padding:30px 26px;color:var(--cream)}
+.trainer .over{color:var(--mint)}
+.pick{display:flex;flex-wrap:wrap;gap:7px;margin:16px 0 20px}
+.pick button{font-family:"JetBrains Mono",monospace;font-size:11px;letter-spacing:.1em;text-transform:uppercase;padding:7px 12px;border-radius:999px;border:1px solid var(--forest-e);background:transparent;color:rgba(244,239,233,.7);cursor:pointer;transition:.24s var(--e)}
+.pick button.on{background:var(--mint);color:var(--forest);border-color:var(--mint)}
+.flip{background:var(--forest-s);border:1px solid var(--forest-e);border-radius:16px;padding:30px 24px;min-height:190px;display:flex;flex-direction:column;justify-content:center;cursor:pointer;text-align:center}
+.flip .q{font-family:Cormorant,serif;font-size:26px;font-weight:500;line-height:1.2;color:var(--cream)}
+.flip .a{margin-top:18px;padding-top:18px;border-top:1px solid var(--forest-e);text-align:left;font-size:16px;color:var(--mint);animation:rise .36s var(--e) both}
+.flip .hint{font-family:"JetBrains Mono",monospace;font-size:10.5px;letter-spacing:.16em;text-transform:uppercase;color:rgba(244,239,233,.4);margin-top:16px}
+.tbar{height:3px;background:var(--forest-e);border-radius:99px;overflow:hidden;margin:18px 0 8px}
+.tbar i{display:block;height:100%;background:var(--mint);width:0;transition:.4s var(--e)}
+.tmeta{display:flex;justify-content:space-between;font-family:"JetBrains Mono",monospace;font-size:11px;color:rgba(244,239,233,.55);letter-spacing:.08em}
+.trow{display:flex;gap:10px;margin-top:16px}
+.trow button{flex:1;padding:14px;border-radius:999px;border:1px solid var(--forest-e);background:transparent;color:var(--cream);font:500 15px Manrope,sans-serif;cursor:pointer;transition:.24s var(--e)}
+.trow button:hover{border-color:var(--mint)}
+.trow button.go{background:var(--mint);color:var(--forest);border-color:var(--mint);font-weight:700}
+.reshuf{margin-top:14px;background:none;border:0;color:rgba(244,239,233,.45);font-family:"JetBrains Mono",monospace;font-size:11px;letter-spacing:.14em;text-transform:uppercase;cursor:pointer;padding:0}
+
+/* чек-лист */
+.chk{display:flex;gap:13px;align-items:flex-start;padding:13px 0;border-bottom:1px solid var(--hair);cursor:pointer}
+.chk input{appearance:none;width:19px;height:19px;flex:0 0 auto;border:1.5px solid var(--hair);border-radius:5px;margin-top:2px;cursor:pointer;transition:.24s var(--e);position:relative;background:#fff}
+.chk input:checked{background:var(--green);border-color:var(--green)}
+.chk input:checked::after{content:"";position:absolute;left:6px;top:2px;width:5px;height:10px;border:solid #fff;border-width:0 2px 2px 0;transform:rotate(45deg)}
+.chk.done span{color:var(--mute);text-decoration:line-through}
+.prog{font-family:"JetBrains Mono",monospace;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--mute);margin-top:14px}
+.reset{background:none;border:0;color:var(--mute);font-family:"JetBrains Mono",monospace;font-size:11px;letter-spacing:.12em;text-transform:uppercase;cursor:pointer;padding:0;margin-top:18px;text-decoration:underline}
+
+/* акценты */
+.pillar{border-left:2px solid var(--green);padding:4px 0 4px 20px;margin:22px 0}
+.pillar b{display:block;font-family:Cormorant,serif;font-size:25px;font-weight:600;color:var(--ink);margin-bottom:4px}
+.warn{border-left-color:var(--amber)}
+.warn b{color:#8a4008}
+.band{background:var(--band);border-radius:18px;padding:28px 26px}
+footer{padding:48px 0 60px;text-align:center}
+footer .t{font-family:Cormorant,serif;font-style:italic;font-size:34px;color:var(--green);line-height:1}
+footer p{color:var(--mute);font-size:13.5px;margin-top:10px}
+
+/* появление */
+.rev{opacity:0;transform:translateY(16px)}
+.rev.in{opacity:1;transform:none;transition:opacity .76s var(--e),transform .76s var(--e)}
+@media (prefers-reduced-motion:reduce){
+  .rev,.rev.in{opacity:1;transform:none;transition:none}
+  .rule{animation:none}.tnode.key .dot{animation:none}
+  html{scroll-behavior:auto}
+}
+@media(max-width:640px){
+  .wrap{padding:0 18px}
+  section{padding:56px 0}
+  .hero{padding:56px 0 50px}
+  .count{gap:20px}
+  .count div b{font-size:36px}
+  .brand{font-size:16px;letter-spacing:.2em}
+}
+</style>
+</head>
+<body>
+<header class="top">
+  <div class="wrap">
+    <div class="brand">Талисман</div>
+    <nav>
+      <a href="#tree">Линия</a>
+      <a href="#people">Люди</a>
+      <a href="#dates">Даты</a>
+      <a href="#consul">Консул</a>
+      <a href="#train">Тренажёр</a>
+      <a href="#go">Сборы</a>
+    </nav>
+  </div>
+</header>
+
+<div class="hero">
+  <div class="wrap">
+    <div class="over">21 октября · Москва · Стремянный 38</div>
+    <h1>Линия <em>права</em></h1>
+    <p class="sub">Четыре поколения и два года запросов в архивы. Всё, что нужно держать в голове на беседе с консулом.</p>
+    <div class="count">
+      <div><b id="cd">—</b><span>дней до приёма</span></div>
+      <div><b>15</b><span>минут беседы</span></div>
+      <div><b>4</b><span>поколения в линии</span></div>
+      <div><b>1</b><span>еврейский предок</span></div>
+    </div>
+    <div class="rule"></div>
+  </div>
+</div>
+
+<section id="tree">
+  <div class="wrap narrow">
+    <div class="shead rev">
+      <div class="over">Кто за кем</div>
+      <h2>Линия до первой еврейки</h2>
+      <p>Снизу вверх: от меня до прабабушки. Всё право на репатриацию держится на ней одной.</p>
+    </div>
+
+    <div class="tree">
+      <div class="tnode rev"><i class="dot"></i>
+        <div class="rel">Я</div>
+        <div class="nm">Талисман Михаил Григорьевич</div>
+        <div class="meta">15 декабря 1997 · Санкт-Петербург</div>
+      </div>
+      <div class="tnode rev"><i class="dot"></i>
+        <div class="rel">Отец</div>
+        <div class="nm">Талисман Григорий Ушерович</div>
+        <div class="meta">6 июля 1970 · Ленинград, Выборгский район</div>
+        <div><span class="tag">в свидетельстве оба родителя — еврей</span></div>
+      </div>
+      <div class="tnode rev"><i class="dot"></i>
+        <div class="rel">Бабушка</div>
+        <div class="nm">Талисман <span class="it">(Каценельсон)</span> Элеонора Иосифовна</div>
+        <div class="meta">8 сентября 1938 · Ленинград — 3 января 2023 · Санкт-Петербург</div>
+        <div><span class="tag">паспорт СССР: еврейка</span></div>
+      </div>
+      <div class="tnode key rev"><i class="dot"></i>
+        <div class="rel">Прабабушка · мать бабушки</div>
+        <div class="nm">Зеликман Мария Григорьевна</div>
+        <div class="meta">1911–1913 · Рогачёв, Могилёвская губерния</div>
+        <div><span class="tag brass">первая женщина-еврейка в линии</span></div>
+      </div>
+    </div>
+
+    <div class="band rev" style="margin-top:26px">
+      <h3>Почему именно она</h3>
+      <p>Прабабушка рождена <b>до 1917 года</b>. Тогда ЗАГСов не существовало: рождения, браки и смерти фиксировала только синагога, церковь или костёл. Значит её рождение регистрировало еврейское общество Рогачёва — и вся линия за ней еврейская по определению.</p>
+      <p>После 1917 появились ЗАГСы, стало можно регистрировать смешанные браки, и такой автоматический вывод больше не работает.</p>
+      <ul class="m step">
+        <li>Ветка одна — через прабабушку.</li>
+        <li>По ней же репатриировались тётя Лена и её дочь Галя.</li>
+        <li>Их документы срезают консулу половину проверки: общий еврейский предок тот же.</li>
+      </ul>
+    </div>
+
+    <div class="grid g2 rev" style="margin-top:18px">
+      <div class="card">
+        <div class="over">Боковая ветвь</div>
+        <div class="branch" style="margin:12px 0 0 0">
+          <div class="bn">Дедушка — Талисман Ушер Пинхосович</div>
+          <p class="small">13 июля 1940, Шепетовка — 13 января 2025, деревня Юкки. Паспорт СССР: еврей.</p>
+          <div class="bn" style="margin-top:14px">Его мать — Зелихман Маня Марковна</div>
+          <p class="small">1908 — 1 марта 1990, Ленинград. В документах три фамилии: Шпилько, Талисман, Зелихман.</p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="pillar warn" style="margin:0">
+          <b>Не перепутать</b>
+          <p><b>Зели<span style="color:var(--green-d)">к</span>ман Мария Григорьевна</b> — мать бабушки. Рогачёв. Моя линия права.</p>
+          <p><b>Зели<span style="color:var(--amber)">х</span>ман Маня Марковна</b> — мать дедушки. Другая ветка, к праву отношения не имеет.</p>
+          <p class="small">Фамилии почти одинаковые. Если консул подменит имя — спокойно поправить и назвать верное.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="people">
+  <div class="wrap narrow">
+    <div class="shead rev">
+      <div class="over">Досье</div>
+      <h2>Люди и документы</h2>
+      <p>Всё, что написано в бумагах. Консул может закрыть часть документа рукой и спросить, что там.</p>
+    </div>
+    <div class="grid rev" id="people-list"></div>
+  </div>
+</section>
+
+<section id="dates">
+  <div class="wrap narrow">
+    <div class="shead rev">
+      <div class="over">Хронология</div>
+      <h2>Лента дат</h2>
+      <p>Консулу хватит года. Но порядок событий нужно держать твёрдо: кто родился раньше, кто когда женился.</p>
+    </div>
+    <div class="tl rev" id="tl"></div>
+    <div class="card rev" style="margin-top:8px">
+      <h3>Чего пока не знаю</h3>
+      <ul class="m no">
+        <li>Дата развода бабушки и дедушки.</li>
+        <li>Дата смерти прабабушки Марии Григорьевны.</li>
+      </ul>
+      <p class="small">Старые черновики анкет 2024 года содержали ошибки по памяти. В консульскую анкету ушли верные даты — черновики больше не смотрю.</p>
+    </div>
+  </div>
+</section>
+
+<section id="consul">
+  <div class="wrap narrow">
+    <div class="shead rev">
+      <div class="over">Беседа</div>
+      <h2>Что спросит консул</h2>
+      <p>Сама беседа минут пятнадцать. Ожидание — до целого дня.</p>
+    </div>
+
+    <div class="grid g3 rev">
+      <div class="card"><div class="pillar" style="margin:0"><b>Переезжаю</b><p class="small">На любой вопрос — позиция переезда, а не «за документами». Так же потом в аэропорту Израиля.</p></div></div>
+      <div class="card"><div class="pillar" style="margin:0"><b>Собрал всё</b><p class="small">Обошёл все ЗАГСы, по каждому родственнику запросил всё, включая иные сведения. Больше собрать нечего.</p></div></div>
+      <div class="card"><div class="pillar" style="margin:0"><b>Нерелигиозен</b><p class="small">Так и пишу в анкете. Главное — смены религии не было.</p></div></div>
+    </div>
+
+    <div class="band rev" style="margin:26px 0">
+      <h3>Если это стресс-проверка</h3>
+      <p>Консул может ругать документы, путать имена, повторять один вопрос десять раз, придираться к почерку и файликам. Это способ проверки, а не отношение ко мне.</p>
+      <ul class="m no">
+        <li>Не спорить. Никогда и ни в чём.</li>
+        <li>Не оправдываться и не реагировать на тон.</li>
+        <li>Не рассказывать, что кто-то сопровождал — готовился сам.</li>
+      </ul>
+      <p class="small">В Москве тринадцать консулов, жёсткий один — Борис. Шанс попасть к нему небольшой.</p>
+    </div>
+
+    <div class="rev" id="qa-list"></div>
+  </div>
+</section>
+
+<section id="train">
+  <div class="wrap narrow">
+    <div class="shead rev">
+      <div class="over">Зубрёжка</div>
+      <h2>Тренажёр</h2>
+      <p>Вопрос — вспомнил — проверил. «Не помню» возвращает карточку в конец круга.</p>
+    </div>
+    <div class="trainer rev">
+      <div class="over">Карточки</div>
+      <div class="pick" id="pick"></div>
+      <div class="flip" id="flip"><div class="q" id="q"></div><div class="a" id="a" hidden></div><div class="hint" id="hint">нажми, чтобы увидеть ответ</div></div>
+      <div class="tbar"><i id="bar"></i></div>
+      <div class="tmeta"><span id="pos"></span><span id="score"></span></div>
+      <div class="trow"><button id="again">Не помню</button><button id="ok" class="go">Знаю</button></div>
+      <button class="reshuf" id="reshuffle">перемешать заново</button>
+    </div>
+  </div>
+</section>
+
+<section id="go">
+  <div class="wrap narrow">
+    <div class="shead rev">
+      <div class="over">Сборы</div>
+      <h2>На приём</h2>
+      <p>Отметки сохраняются в браузере.</p>
+    </div>
+
+    <div class="rev">
+      <h3>Сделать до 21 октября</h3>
+      <div id="todo"></div>
+      <div class="prog" id="todo-prog"></div>
+    </div>
+
+    <div class="rev" style="margin-top:44px">
+      <h3>Взять с собой</h3>
+      <div id="take"></div>
+      <div class="prog" id="take-prog"></div>
+      <button class="reset" id="clr">сбросить все отметки</button>
+    </div>
+
+    <div class="grid g2 rev" style="margin-top:44px">
+      <div class="card">
+        <h3>Оставить дома</h3>
+        <ul class="m no">
+          <li>Электронику. Телефон в камеру хранения, внутрь только документы.</li>
+          <li>Звезду Давида и любые религиозные атрибуты — снять до входа.</li>
+          <li>Таблетки: без справки от врача заберут.</li>
+          <li>Ремни, металлические пуговицы — рамка очень чувствительная.</li>
+          <li>Обложки паспортов: из них вываливается забытое.</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>Как разложить папки</h3>
+        <ul class="m step">
+          <li>Отдельная папка на каждого: я, папа, бабушка, дедушка, прабабушка.</li>
+          <li>Внутри — рождение, брак, развод, смерть, личные документы.</li>
+          <li>Телефон и адрес Гали — на отдельном листке сзади.</li>
+        </ul>
+        <p class="small">Правил раскладки не существует, придраться могут к любой. Важно одно: я сам мгновенно нахожу нужный документ, даже если консул разложит всё по столу.</p>
+      </div>
+    </div>
+
+    <div class="band rev" style="margin-top:26px">
+      <h3>Как проходит день</h3>
+      <ul class="m step">
+        <li>Прийти за 15 минут, не раньше. Заложить целый день.</li>
+        <li>Охраннику внизу: пришёл на приём к консулу. Спустится сотрудник.</li>
+        <li>Четвёртый этаж, железная дверь под камерами, металлоискатель, сверка загранпаспорта.</li>
+        <li>В окошке анкета: ФИО, судимости — нет, заболевания — нет, вероисповедание — нерелигиозен.</li>
+        <li>Закрытый зал ожидания. Вода, стулья, туалет на этаже. Ждать можно долго.</li>
+        <li>Беседа с консулом — минут пятнадцать. Решение объявляют сразу.</li>
+        <li>Попросит донести документ — записать дословно на листок, без этого не запишут повторно.</li>
+        <li>Поставят визу — проверить имя и фамилию на месте.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="t">Т</div>
+    <p>Личное досье · обновлено 23 сентября 2026</p>
+  </div>
+</footer>
+<script>
+const PEOPLE=[
+ {n:"Талисман Михаил Григорьевич",r:"Я",f:[
+   ["Рождение","15 декабря 1997, Санкт-Петербург"],
+   ["Родители","Талисман Григорий Ушерович · Любимова Марина Фатимовна"],
+   ["Запись акта","№ 84 от 16 января 1998, отдел ЗАГС Кировского района"],
+   ["Прописка","Санкт-Петербург, проспект Авиаконструкторов, 38 корпус 1, квартира 335"],
+   ["Паспорт","4017 № 961541, ТП 70 УФМС по Санкт-Петербургу и Ленинградской области в Приморском районе, 29.12.2017"]]},
+ {n:"Талисман Григорий Ушерович",r:"Отец",f:[
+   ["Рождение","6 июля 1970, Ленинград, Выборгский район"],
+   ["Свидетельство","II-ЮБ № 580123, прописью «тысяча девятьсот семидесятого года»"],
+   ["Запись акта","№ 2592 от 19 августа 1970, Выборгский ЗАГС Ленинграда"],
+   ["Родители","Талисман Ушер Пинхосович · Талисман Элеонора Иосифовна. У обоих в графе национальность — еврей"],
+   ["Первый брак","Любимова Марина Фатимовна, моя мама. Расторгнут"],
+   ["Второй брак","22 сентября 2011, Каганер Инна Борисовна, отдел ЗАГС Выборгского района"],
+   ["Учёба","1987–1992, РГПУ имени Герцена, географический факультет, учитель географии и биологии"],
+   ["Работа","С 2009 — исполнительный директор ООО «ТД СОЮЗ»"],
+   ["Адреса","Ленинград, проспект Мориса Тореза, 26, квартира 83 — до 1980. Затем улица Подводника Кузьмина, 17, квартира 176. Сейчас Богатырский проспект, 49, квартира 253"],
+   ["Сестра","Лена, моя тётя. Репатриировалась"]]},
+ {n:"Талисман (Каценельсон) Элеонора Иосифовна",r:"Бабушка",f:[
+   ["Рождение","8 сентября 1938, Ленинград"],
+   ["Национальность","В паспорте СССР — еврейка. Паспорт выдан 19 отделением милиции Ленинграда"],
+   ["Родители","Каценельсон Иосиф Мирович · Зеликман Мария Григорьевна"],
+   ["Запись акта","№ 5518 от 25 сентября 1938, Бюро ЗАГС Октябрьского района Ленинграда"],
+   ["Брак","26 января 1968, Дворец Бракосочетания Ленинграда, запись акта № 710"],
+   ["Развод","Был. Дата неизвестна. Версия папы: решали квартирный вопрос, развод юридический, не по сути"],
+   ["Сестра","Рябая София Иосифовна, умерла в 2010-х в Санкт-Петербурге"],
+   ["Учёба","Северо-Западный политехнический институт"],
+   ["Смерть","3 января 2023, 23:30, Санкт-Петербург. Свидетельство V-АК № 892020, запись от 5 января 2023"]]},
+ {n:"Талисман Ушер Пинхосович",r:"Дедушка",f:[
+   ["Рождение","13 июля 1940, город Шепетовка. В свидетельстве — Каменец-Подольская область, позже Хмельницкая"],
+   ["Национальность","В паспорте СССР — еврей. Паспорт XI-АК № 691255, 19 отделение милиции Ленинграда, 26 марта 1979"],
+   ["Родители","Талисман Пинхос Нусинович · Талисман Мария, она же Маня, Марковна"],
+   ["Запись акта","№ 562, август 1940, Шепетовский городской ЗАГС"],
+   ["Военное","Старший лейтенант медицинской службы запаса. Справка Выборгского райвоенкомата Ленинграда № 3/318 от 15 декабря 1978: в личном деле мать записана как Шпилько Маня Марковна"],
+   ["Смерть","13 января 2025, Ленинградская область, Всеволожский район, деревня Юкки. Запись № 170259780002700412008 от 20 января 2025"]]},
+ {n:"Зеликман Мария Григорьевна",r:"Прабабушка · ключевая",f:[
+   ["Рождение","Рогачёв Рогачёвского уезда Могилёвской губернии, сейчас Гомельская область Беларуси. 1911–1913 годы"],
+   ["Почему она","Рождена до 1917 года, когда рождение регистрировала только синагога. Значит линия за ней еврейская"],
+   ["Семья","Муж — Каценельсон Иосиф Мирович. Дочери — Элеонора, моя бабушка, и София"],
+   ["Имя","В документах встречается и как Мария, и как Маня Григорьевна. Это нормально, консультант подтвердила"],
+   ["Отказ архива","Национальный исторический архив Беларуси, 28 января 2026, № 04-09/58, директор М. М. Глушаков. Метрических книг Рогачёвского еврейского общества за 1911–1913 годы в архиве нет, они не передавались"],
+   ["Смерть","Неизвестна — дозаполнить"]]},
+ {n:"Зелихман (Шпилько, Талисман) Маня Марковна",r:"Прабабушка по дедушке",f:[
+   ["Рождение","1908 год, по пенсионному удостоверению"],
+   ["Смерть","1 марта 1990, Ленинград, Кировский район, в возрасте 81 года. Запись № 825 от 2 марта 1990, свидетельство V-АК № 342565"],
+   ["Пенсия","Удостоверение № 141, Шепетовский горсобес, по старости с 18 апреля 1963, размер 36 рублей 13 копеек"],
+   ["Фамилии","Шпилько в военкомате, Талисман в свидетельстве о рождении сына, Зелихман в свидетельстве о смерти"],
+   ["Важно","Это не Зеликман Мария Григорьевна. Другая ветка, к праву отношения не имеет"]]},
+ {n:"Тётя Лена и двоюродная сестра Галя",r:"Живые по линии",f:[
+   ["Лена","Сестра папы. Репатриировалась по той же прабабушке. Взять ксерокопию свидетельства о рождении"],
+   ["Галя","Дочь Лены, живёт в Израиле. Взять свидетельство о рождении и копию теудат зеут"],
+   ["Зачем","Позволяет консулу срезать проверку: общий еврейский предок тот же"],
+   ["Листок","Телефон и адрес Гали переписать от руки — телефона на приёме не будет"]]}
+];
+const DATES=[
+ ["1908","Родилась Маня Марковна — мать дедушки",0],
+ ["1911–1913","Родилась прабабушка Мария Григорьевна Зеликман, Рогачёв",1],
+ ["8 сентября 1938","Родилась бабушка Элеонора, Ленинград · запись № 5518 от 25.09.1938",0],
+ ["13 июля 1940","Родился дедушка Ушер, Шепетовка · запись № 562",0],
+ ["18 апреля 1963","Мане Марковне назначена пенсия, Шепетовский горсобес",0],
+ ["26 января 1968","Брак бабушки и дедушки, Дворец Бракосочетания Ленинграда · запись № 710",0],
+ ["6 июля 1970","Родился папа Григорий, Ленинград · свидетельство II-ЮБ № 580123",0],
+ ["15 декабря 1978","Справка военкомата: мать дедушки — Шпилько Маня Марковна",0],
+ ["26 марта 1979","Дедушке выдан паспорт СССР, 19 отделение милиции Ленинграда",0],
+ ["1 марта 1990","Умерла Маня Марковна, Ленинград, 81 год",0],
+ ["15 декабря 1997","Родился я, Санкт-Петербург · запись № 84 от 16.01.1998",0],
+ ["22 сентября 2011","Второй брак папы — Инна Борисовна Каганер",0],
+ ["3 января 2023","Умерла бабушка Элеонора, Санкт-Петербург, 23:30 · свидетельство V-АК № 892020",0],
+ ["13 января 2025","Умер дедушка Ушер, деревня Юкки",0],
+ ["28 января 2026","Отказ архива Беларуси по рождению прабабушки, № 04-09/58",1],
+ ["21 октября 2026","Консульский приём, Москва",1]
+];
+const QA=[
+ ["Зачем вы пришли?","Я на репатриацию. Хочу переехать в Израиль."],
+ ["Почему решили переехать, что не нравится в России?","Про Россию не говорю. Давно хотел в Израиль — был на Таглите, страна запала в сердце. Потом ковид, потом надо было получить образование и встать на ноги. Сейчас подходящий возраст, чтобы выбрать, где жить дальше. Нравится менталитет, климат, с этой страной связаны мои корни. Хочу там строить семью и карьеру."],
+ ["Почему не переехали пять лет назад?","Был совсем молодой, только получил образование, не было ни денег, ни понимания, как зарабатывать. Переезжаю один, нужна была уверенность и подушка. Плюс были живы бабушка и дедушка, хотелось провести с ними время."],
+ ["Почему не по программе — Маса, учёба?","Я уже выбрал профессию и умею зарабатывать. Работаю онлайн. Тратить время на программу не нужно, нужно просто переехать, обустроиться и учить язык."],
+ ["Чем занимаетесь, где будете работать?","Онлайн-образование, своё ИП в России без сотрудников. Плюс руковожу маркетингом клиники в Петербурге, работа полностью дистанционная. В Израиле хочу расширять свой бизнес: большой рынок онлайн, страна стартапов."],
+ ["Что с недвижимостью и деньгами?","Квартиру продал пару лет назад, деньги в акциях и облигациях, ликвидные, вывести могу в любой момент. Есть подушка на первое время."],
+ ["Есть родственники, которым нужен уход?","Нет. Бабушек и дедушек не осталось. Папа в расцвете сил, работает, двое детей. Мама год как на пенсии, у неё всё хорошо."],
+ ["Папа собирается переезжать?","Пока нет, он думал об этом. Может быть потом — я обустроюсь, позову в гости."],
+ ["Куда поедете, сойдя с трапа?","В Хайфу. Тель-Авив дорогой, а Хайфа дешевле и там много тех, кто работает в IT и онлайн. Первые недели поезжу по стране, посмотрю Иерусалим и Тель-Авив, потом буду искать жильё."],
+ ["Ваш план на первые полгода?","Переехать, обустроиться, снять жильё в Хайфе. Учить язык, ульпан. Разобраться, как легализовать бизнес в Израиле. Параллельно продолжать работу — деньги на жизнь нужны."],
+ ["Когда собираетесь лететь?","Месяц-полтора. Закрыть дела со съёмной квартирой, сделать генеральную доверенность на папу, собрать вещи. Новый год планирую встречать уже в Израиле."],
+ ["Вы просто за документами, потом вернётесь?","Нет, я переезжаю жить. Приезжать буду — здесь родные, но жить собираюсь в Израиле."],
+ ["Какое у вас вероисповедание?","Нерелигиозен. Традиции не соблюдаю. Отец, бабушка, прабабушка — еврейская линия, с религией соприкасаюсь, но не практикую. Смены религии не было."],
+ ["Вы же были в Казанском соборе?","Был на экскурсии, это памятник архитектуры, я живу в Петербурге. В хоральной синагоге тоже был."],
+ ["Какие документы с национальностью еврей вы принесли?","Почти в каждом. Паспорт бабушки — еврейка, паспорт дедушки — еврей, в свидетельстве о рождении папы оба родителя евреи. Линия прослеживается по всем документам."],
+ ["Почему вы не нашли документ Х?","Показываю то, что есть: запросил всё, что возможно. Вот ответ архива — документы не сохранились."],
+ ["Вам кто-то помогал, сопровождал?","Нет. Информацию изучал сам, документы собирал сам, два года."],
+ ["Почему приём в Москве, а не в Петербурге?","Часто бываю в Москве, здесь друзья, рад лишнему поводу приехать."],
+ ["Есть девушка, невеста?","Нет."],
+ ["Что за почерк, где вы эти справки покупали?","Спокойно: документы получал в ЗАГСах, вот что выдали. Не спорить, не оправдываться, не реагировать на тон."]
+];
+const CARDS=[
+ ["me","Когда и где я родился?","15 декабря 1997 года, Санкт-Петербург. Запись № 84 от 16.01.1998, отдел ЗАГС Кировского района."],
+ ["me","Мои родители по свидетельству о рождении?","Отец — Талисман Григорий Ушерович. Мать — Любимова Марина Фатимовна."],
+ ["dad","Когда и где родился папа?","6 июля 1970 года, Ленинград, Выборгский район. Свидетельство II-ЮБ № 580123, запись № 2592 от 19.08.1970."],
+ ["dad","Что в свидетельстве папы в графах национальности родителей?","У обоих — еврей. Отец Талисман Ушер Пинхосович, мать Талисман Элеонора Иосифовна."],
+ ["dad","Браки папы?","Первый — с моей мамой, Любимовой Мариной Фатимовной, расторгнут. Второй — 22 сентября 2011 года, Каганер Инна Борисовна, ЗАГС Выборгского района."],
+ ["dad","Где папа учился и работает?","РГПУ имени Герцена, географический факультет, 1987–1992, учитель географии и биологии. С 2009 — исполнительный директор ООО «ТД СОЮЗ»."],
+ ["dad","Адреса семьи до 1974 года?","Ленинград, проспект Мориса Тореза, дом 26, квартира 83 — примерно до 1980. Потом улица Подводника Кузьмина, дом 17, квартира 176."],
+ ["gran","Полное имя бабушки с девичьей фамилией?","Талисман, в девичестве Каценельсон, Элеонора Иосифовна."],
+ ["gran","Когда и где родилась бабушка?","8 сентября 1938 года, Ленинград. Бюро ЗАГС Октябрьского района, запись № 5518 от 25.09.1938."],
+ ["gran","Родители бабушки?","Отец — Каценельсон Иосиф Мирович. Мать — Зеликман Мария Григорьевна."],
+ ["gran","Что в паспорте бабушки в графе национальность?","Еврейка. Паспорт выдан 19 отделением милиции Ленинграда."],
+ ["gran","Когда бабушка вышла замуж?","26 января 1968 года, Дворец Бракосочетания Ленинграда, запись акта № 710."],
+ ["gran","Почему бабушка и дедушка развелись?","Точно сказать не могу, их уже нет в живых. Спрашивал папу: решали квартирный вопрос, развод был юридический, не по сути отношений. В советское время так делали часто."],
+ ["gran","Сестра бабушки?","Рябая София Иосифовна, умерла в 2010-х в Санкт-Петербурге."],
+ ["gran","Когда умерла бабушка?","3 января 2023 года в 23:30, Санкт-Петербург. Свидетельство V-АК № 892020."],
+ ["grandad","Когда и где родился дедушка?","13 июля 1940 года, город Шепетовка. В свидетельстве — Каменец-Подольская область, позже Хмельницкая. Запись № 562, Шепетовский городской ЗАГС."],
+ ["grandad","Родители дедушки?","Отец — Талисман Пинхос Нусинович. Мать — Мария, она же Маня, Марковна."],
+ ["grandad","Что в паспорте дедушки в графе национальность?","Еврей. Паспорт XI-АК № 691255, выдан 26 марта 1979 года."],
+ ["grandad","Что за справка из военкомата на дедушку?","Выборгский райвоенкомат Ленинграда, 15 декабря 1978, № 3/318. Дедушка — старший лейтенант медицинской службы запаса, в личном деле мать записана как Шпилько Маня Марковна."],
+ ["grandad","Когда умер дедушка?","13 января 2025 года, Ленинградская область, Всеволожский район, деревня Юкки."],
+ ["great","Кто мой первый еврейский предок и почему именно он?","Прабабушка Зеликман Мария Григорьевна. Рождена до 1917 года, когда ЗАГСов не было и рождение регистрировала только синагога. Значит вся линия за ней еврейская."],
+ ["great","Где и когда родилась прабабушка?","Рогачёв Рогачёвского уезда Могилёвской губернии, сейчас Гомельская область Беларуси. Годы 1911–1913."],
+ ["great","Почему в документах она то Мария, то Маня?","Это одно имя в разных написаниях, в документах того времени так бывает постоянно."],
+ ["great","Где свидетельство о рождении прабабушки?","Его нет. Есть официальный отказ Национального исторического архива Беларуси от 28 января 2026 года № 04-09/58: метрических книг Рогачёвского еврейского общества за 1911–1913 годы в архиве нет."],
+ ["great","Муж и дети прабабушки?","Муж — Каценельсон Иосиф Мирович. Дочери — Элеонора, моя бабушка, и София."],
+ ["great","Чем Зелихман Маня Марковна отличается от Зеликман Марии Григорьевны?","Маня Марковна — мать дедушки Ушера, 1908 года, умерла 1 марта 1990 в Ленинграде. Другая ветка. Моя линия права идёт через Марию Григорьевну, мать бабушки."],
+ ["rel","Кто из родных уже в Израиле?","Тётя Лена, сестра папы, и её дочь Галя — моя двоюродная сестра. Репатриировались по той же прабабушке."],
+ ["docs","В каких ЗАГСах я брал документы?","Это написано сверху на каждой справке. Обошёл ЗАГСы Санкт-Петербурга, по каждому родственнику брал всё, включая иные сведения."],
+ ["docs","Зачем я собрал столько справок?","Читал форумы и телеграм-каналы, изучал вопрос. Писали собирать всё возможное — я и собрал всё, что можно было получить."]
+];
+const GROUPS={me:"Я",dad:"Папа",gran:"Бабушка",grandad:"Дедушка",great:"Прабабушка",rel:"Родные",docs:"Документы"};
+const TODO=["Распечатать отказ архива Беларуси по рождению прабабушки","Апостиль на повторное свидетельство о рождении, МФЦ до 5 дней","Забрать справку о гражданском состоянии из МФЦ и поставить апостиль","Сделать фотографии на визу Алия","Ксерокопия свидетельства о рождении тёти Лены","Свидетельство о рождении Гали и копия её теудат зеут","Переписать телефон и адрес Гали на отдельный листок","Посмотреть ролик про Хайфу — понимать, куда еду","Посмотреть на Яндекс.Картах вход на Стремянный 38, там ремонт","Генеральная доверенность на папу: съёмная квартира и дела","Перечитать каждый документ и знать, что в нём написано"];
+const TAKE=["Загранпаспорт — держать под рукой, сверяют на входе","Гражданский паспорт","Военный билет","Фотографии для визы","Справка о несудимости с апостилем","Справка о гражданском состоянии","Трудовая, диплом, свидетельство о рождении","Папка на папу: рождение, брак, развод, второй брак","Папка на бабушку: рождение, брак, смерть, паспорт","Папка на дедушку: рождение, паспорт, военкомат, смерть","Папка на прабабушку: всё что есть плюс отказ архива","Копии документов тёти Лены и Гали","Листок с телефоном и адресом Гали","Немного денег и карта"];
+
+/* обратный отсчёт */
+(function(){
+  const t=new Date(2026,9,21), now=new Date();
+  const d=Math.ceil((t-now)/864e5);
+  document.getElementById('cd').textContent = d>0? d : (d===0?"сегодня":"—");
+})();
+
+/* люди */
+document.getElementById('people-list').innerHTML = PEOPLE.map((p,i)=>
+ `<div class="person"><button type="button" data-i="${i}"><span class="pn">${p.n}</span><span class="pr">${p.r}</span></button>
+  <div class="body"><dl class="kv">${p.f.map(f=>`<dt>${f[0]}</dt><dd>${f[1]}</dd>`).join('')}</dl></div></div>`).join('');
+document.querySelectorAll('.person button').forEach(b=>b.onclick=()=>b.parentElement.classList.toggle('open'));
+
+/* даты */
+document.getElementById('tl').innerHTML = DATES.map(d=>
+ `<div class="ev${d[2]?' br':''}"><div class="yr">${d[0]}</div><div class="tx">${d[1]}</div></div>`).join('');
+
+/* вопросы */
+document.getElementById('qa-list').innerHTML = QA.map(q=>
+ `<div class="qa"><button type="button">${q[0]}</button><div class="ans">${q[1]}</div></div>`).join('');
+document.querySelectorAll('.qa button').forEach(b=>b.onclick=()=>b.parentElement.classList.toggle('open'));
+
+/* чек-листы */
+function list(id,items,key,progId){
+  const box=document.getElementById(id);
+  let saved={}; try{saved=JSON.parse(localStorage.getItem(key)||'{}')}catch(e){}
+  box.innerHTML=items.map((t,i)=>`<label class="chk${saved[i]?' done':''}"><input type="checkbox" data-i="${i}"${saved[i]?' checked':''}><span>${t}</span></label>`).join('');
+  const prog=()=>{const n=Object.values(saved).filter(Boolean).length;
+    document.getElementById(progId).textContent=`${n} из ${items.length}`;};
+  box.querySelectorAll('input').forEach(inp=>inp.onchange=()=>{
+    inp.closest('label').classList.toggle('done',inp.checked);
+    saved[inp.dataset.i]=inp.checked;
+    try{localStorage.setItem(key,JSON.stringify(saved))}catch(e){}
+    prog();
+  });
+  prog();
+}
+list('todo',TODO,'rep_todo','todo-prog');
+list('take',TAKE,'rep_take','take-prog');
+document.getElementById('clr').onclick=()=>{
+  try{localStorage.removeItem('rep_todo');localStorage.removeItem('rep_take')}catch(e){}
+  list('todo',TODO,'rep_todo','todo-prog'); list('take',TAKE,'rep_take','take-prog');
+};
+
+/* тренажёр */
+let filter='all',deck=[],idx=0,right=0,shown=false;
+const pick=document.getElementById('pick');
+pick.innerHTML=`<button data-g="all" class="on">Все</button>`+Object.entries(GROUPS).map(([k,v])=>`<button data-g="${k}">${v}</button>`).join('');
+pick.querySelectorAll('button').forEach(b=>b.onclick=()=>{
+  pick.querySelectorAll('button').forEach(x=>x.classList.toggle('on',x===b));
+  filter=b.dataset.g; build();
+});
+function build(){
+  deck=CARDS.filter(c=>filter==='all'||c[0]===filter);
+  for(let i=deck.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[deck[i],deck[j]]=[deck[j],deck[i]];}
+  idx=0;right=0;render();
+}
+function render(){
+  const q=document.getElementById('q'),a=document.getElementById('a'),h=document.getElementById('hint');
+  if(idx>=deck.length){
+    q.textContent=`Круг пройден: ${right} из ${deck.length}`;
+    a.hidden=true; h.textContent='перемешать заново';
+    document.getElementById('bar').style.width='100%';
+    document.getElementById('pos').textContent=''; document.getElementById('score').textContent='';
+    return;
+  }
+  shown=false;
+  q.textContent=deck[idx][1]; a.textContent=deck[idx][2]; a.hidden=true;
+  h.textContent='нажми, чтобы увидеть ответ';
+  document.getElementById('bar').style.width=(idx/deck.length*100)+'%';
+  document.getElementById('pos').textContent=`${idx+1} / ${deck.length}`;
+  document.getElementById('score').textContent=`знаю ${right}`;
+}
+document.getElementById('flip').onclick=()=>{
+  if(idx>=deck.length)return;
+  shown=!shown;
+  document.getElementById('a').hidden=!shown;
+  document.getElementById('hint').textContent=shown?'':'нажми, чтобы увидеть ответ';
+};
+document.getElementById('ok').onclick=()=>{if(idx<deck.length){right++;idx++;render();}};
+document.getElementById('again').onclick=()=>{if(idx<deck.length){deck.push(deck[idx]);idx++;render();}};
+document.getElementById('reshuffle').onclick=build;
+build();
+
+/* появление и активный пункт меню */
+const io=new IntersectionObserver((es)=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{rootMargin:"0px 0px -8% 0px"});
+document.querySelectorAll('.rev').forEach((el,i)=>{el.style.transitionDelay=(Math.min(i%4,3)*70)+'ms';io.observe(el)});
+const links=[...document.querySelectorAll('.top nav a')];
+const spy=new IntersectionObserver((es)=>es.forEach(e=>{
+  if(e.isIntersecting){links.forEach(l=>l.classList.toggle('on',l.getAttribute('href')==='#'+e.target.id));}
+}),{rootMargin:"-45% 0px -50% 0px"});
+document.querySelectorAll('section[id]').forEach(s=>spy.observe(s));
+</script>
+</body>
+</html>
